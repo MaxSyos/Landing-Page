@@ -1,0 +1,136 @@
+.container{
+    height: 130px;
+    position: relative;
+}
+
+.Wrapper{
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.Left{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    
+}
+.Language{
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.SearchContainer{
+    border: 0.5px solid lightgray;
+    display: flex;
+    align-items: center;
+    margin-left: 25px;
+    padding: 5px;
+}
+
+.Input{
+    border: none;
+}
+
+.Logo{
+    font-weight: bold;
+}
+
+.container .Wrapper .Right{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    font-weight: bold;
+
+}
+
+.container .Wrapper .Right .MenuItem{
+    font-size: 18px;
+    cursor: pointer;
+    margin-left: 25px;
+    margin-right: 10px;
+    transition: all 300ms ease;
+}
+
+.container .Wrapper .Right .MenuItem:hover {
+	color: #e77c01;
+    font-size: 20px;
+}
+
+.Item{
+    font-size: 18px;
+    cursor: pointer;
+    margin-left: 25px;
+    margin-right: 10px;
+    transition: all 300ms ease;
+    
+}
+
+.Item:hover{
+    color: #e77c01;
+    font-size: 20px;
+}
+
+.hamburger{
+    display: none;
+}
+
+.Menu{
+    display: none;
+}
+
+@media screen and (max-width: 640px) {
+
+    .container .Wrapper .Right .MenuItem {
+        display: none;
+        
+    }
+
+    .Item{
+        display: none;
+    }
+
+    .hamburger{
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 25px;
+        height: 25px;
+        cursor: pointer;
+    }
+
+    .line{
+        width: 100%;
+        height: 3px;
+        background-color: black;
+    }
+
+    .Menu{
+        position: fixed;
+        border-radius: 10px;
+        height: calc(100vh - 200px);
+        width: 80vw;
+        background: linear-gradient(to top left, rgb(245, 243, 236), rgb(253, 253, 253)  );
+        top: 150px;
+        padding: 0;
+        margin: 0;
+        font-weight: bold;
+        color: black; 
+        list-style: none;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-direction: column;
+        z-index: 999;
+        right: 0;
+        font-size: 30px;
+        transition: all 1s ease;
+    }
+
+
+}
+
+
