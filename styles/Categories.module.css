@@ -1,0 +1,12 @@
+.container{
+    display: flex;
+    padding: 20px;
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 852px) {
+    .container{
+        flex-direction: column;
+    }
+
+}
